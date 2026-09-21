@@ -14,7 +14,7 @@ Travail pratique d'exploration, nettoyage et profilage de données appliqué au 
 
 | Fichier | Description |
 |---|---|
-| [`Devoir2_BNDE.ipynb`](Devoir2_BNDE.ipynb) | Notebook principal : exploration, nettoyage et analyse du portefeuille de crédit |
+| [`Analyse_Portefeuille_Credit_BNDE.ipynb`](Analyse_Portefeuille_Credit_BNDE.ipynb) | Notebook principal : exploration, nettoyage et analyse du portefeuille de crédit |
 | [`BNDE_Presentation.pptx`](BNDE_Presentation.pptx) | Support de présentation des résultats |
 | [`Pratiques.pdf`](Pratiques.pdf) | Document de référence / énoncé des travaux pratiques |
 | [`dataset_BNDE.csv`](dataset_BNDE.csv) / [`dataset_BNDE.xlsx`](dataset_BNDE.xlsx) | Jeu de données du portefeuille de crédit |
