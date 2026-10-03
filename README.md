@@ -42,6 +42,7 @@ Travail pratique d'exploration, de nettoyage et de profilage de données appliqu
 4. **Profilage des clients** : régions, secteurs d'activité, revenus, garanties, taux d'intérêt
 5. **Analyse du risque** : statut de remboursement croisé avec le montant, le taux, le retard, la région, la garantie, le revenu et la durée
 6. **Évaluation de l'exploitabilité** des données
+7. **Tests de significativité** : test du χ² d'indépendance entre le statut et chaque variable
 
 ## Principaux résultats
 
@@ -49,7 +50,8 @@ Travail pratique d'exploration, de nettoyage et de profilage de données appliqu
 - **Le retard de paiement est le signal de risque le plus fort** : les clients Contentieux ont les retards médians les plus élevés.
 - **Montant, taux d'intérêt, garantie et durée ne distinguent pas les bons des mauvais payeurs.** Les taux moyens sont quasi identiques d'un statut à l'autre (12,8 % à 13,3 %), ce qui montre l'absence de prime de risque différenciée.
 - **Un revenu élevé ne garantit pas le remboursement** : parmi les clients gagnant plus de 500 000 FCFA, 50 sont Douteux et 12 Contentieux.
-- **Par région** : Dakar est la plus saine (67 % de bons payeurs), Kaolack a le taux de Contentieux le plus élevé (~13 %), Ziguinchor et Saint-Louis ont le plus de clients Douteux (≥ 28 %).
+- **Par région** : Kaolack a le taux de défaut global le plus bas (31 %) mais la plus forte part de Contentieux (~13 %) ; Ziguinchor et Saint-Louis ont le plus de clients Douteux (≥ 28 %).
+- **Significativité** : aucun écart n'est statistiquement significatif (tests du χ², p > 0,38). Aucune variable ne distingue, à elle seule, les bons des mauvais payeurs.
 - **Qualité des données après nettoyage** : 500 lignes ; il reste des valeurs manquantes sur `Revenu_Mensuel` (20) et `Taux_Interet` (10).
 
 ## Exécution
@@ -57,13 +59,13 @@ Travail pratique d'exploration, de nettoyage et de profilage de données appliqu
 ```bash
 git clone https://github.com/Matar18/TP-BNDE.git
 cd TP-BNDE
-pip install pandas numpy matplotlib seaborn jupyter
+pip install pandas numpy matplotlib seaborn scipy jupyter
 jupyter notebook Analyse_Portefeuille_Credit_BNDE.ipynb
 ```
 
 ## Outils utilisés
 
-- Python : pandas, numpy, matplotlib, seaborn
+- Python : pandas, numpy, matplotlib, seaborn, scipy
 - Jupyter Notebook
 
 ## Auteur
